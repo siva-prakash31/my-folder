@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Local TTD Autofill",
+  "version": "1.0",
+  "description": "A private, local script to autofill darshan booking details.",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.ttdevasthanams.ap.gov.in/*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
